@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/sp_dev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20sp"
+        android:entries="@array/string_dev">
+
+    </Spinner>
+
+
+    <EditText
+        android:id="@+id/et_num"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="10sp"
+        android:hint="请输入波特率" />
+
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="请输入发送的内容" />
+
+
+    <!--<Button-->
+    <!--android:layout_marginTop="20sp"-->
+    <!--android:id="@+id/btn_set"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/et_num"-->
+    <!--android:text="设置" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_open"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30sp"
+            android:text="打开" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30sp"
+            android:text="发送" />
+
+        <Button
+            android:id="@+id/btn_receive"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:text="关闭"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_receive">
+
+        <TextView
+            android:id="@+id/text_receive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="接收的信息"
+            android:textColor="#000"
+            android:textSize="18sp" />
+    </ScrollView>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:text="串口P1测试:"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_serial_pass01"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:background="#00ff00"
+            android:text="通过"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_serial_fail01"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:background="#ff0000"
+            android:text="失败"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:text="串口P2测试:"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_serial_pass02"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:background="#00ff00"
+            android:text="通过"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_serial_fail02"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:background="#ff0000"
+            android:text="失败"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:text="串口P3测试:"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_serial_pass03"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:background="#00ff00"
+            android:text="通过"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_serial_fail03"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:background="#ff0000"
+            android:text="失败"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:text="串口测试:"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_serial_pass04"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:background="#00ff00"
+            android:text="通过"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_serial_fail04"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:background="#ff0000"
+            android:text="失败"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_serial_end"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:text="测试完成"
+        android:textSize="30sp" />
+
+
+</LinearLayout>

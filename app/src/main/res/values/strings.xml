@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">系统板诊断程序</string>
+
+    <string name="record_audio_mode_by_file">文件模式</string>
+    <string name="record_audio_mode_by_stream">字节流模式</string>
+    <string name="record_audio_speaking">请讲话...</string>
+    <string name="record_audio_press_to_say">按住说话</string>
+    <string name="record_audio_start">开始</string>
+    <string name="record_audio_stop">停止</string>
+    <string name="record_audio_playing">播放</string>
+    <string name="record_audio_stop_playing">停止播放</string>
+
+    <string-array name="string_dev">
+        <!--<item>串口P1:ttysWK0</item>-->
+        <!--<item>串口P2:ttysWK1</item>-->
+        <!--<item>串口P3:ttysWK2</item>-->
+        <item>串口:ttyS3</item>
+        <!--<item>串口P4:ttyTHS1</item>-->
+        <!--<item>串口P4:ttyTHS2</item>-->
+    </string-array>
+</resources>

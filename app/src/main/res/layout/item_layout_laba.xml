@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="喇叭测试"
+        android:textSize="40sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/bt_laba_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:padding="5dp"
+            android:text="开始测试"
+            android:textColor="#000000"
+            android:textSize="40sp" />
+
+        <Button
+
+            android:id="@+id/bt_pass_submit_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:background="#00ff00"
+            android:padding="5dp"
+            android:text="通过"
+            android:textColor="#ffffff"
+            android:textSize="40sp" />
+
+        <Button
+
+            android:id="@+id/bt_fail_submit_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:background="#ff0000"
+            android:padding="5dp"
+            android:text="失败"
+            android:textColor="#ffffff"
+            android:textSize="40sp" />
+
+    </LinearLayout>
+</LinearLayout>

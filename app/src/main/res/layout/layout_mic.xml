@@ -1,0 +1,68 @@
+<?x  android:gravity="center"ml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Record log"
+        android:id="@+id/tvLog"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="55dp"
+        android:padding="5dp"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@android:color/white" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnPlayAudio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_marginRight="80sp"
+            android:layout_weight="1"
+            android:text="@string/record_audio_playing"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <Button
+            android:id="@+id/bt_mic_pass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_marginRight="80sp"
+            android:layout_weight="1"
+            android:text="通过"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <Button
+            android:id="@+id/bt_mic_fail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80sp"
+            android:layout_marginRight="80sp"
+            android:layout_weight="1"
+            android:text="失败"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+    </LinearLayout>
+
+    <Button
+
+        android:id="@+id/bt_PressToSay"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="100sp"
+        android:layout_marginTop="100sp"
+        android:background="@drawable/selector_press_to_say"
+        android:text="@string/record_audio_press_to_say"
+        android:textSize="40sp" />
+
+</LinearLayout>
